@@ -2,8 +2,8 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className="h-screen py-5 bg-white dark:bg-gray-900 mt-10">
-       <div className="container flex flex-col items-center justify-center p-6 mx-auto mt-4 text-center xl:px-0">
+    <section className="h-screen py-5 bg-white dark:bg-gray-900 " id='services'>
+       <div className="container flex flex-col items-center justify-center p-6 mx-auto mt-24 text-center xl:px-0">
         {/* <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">Testimonials</div> */}
         <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">Here&#x27;s what our customers said</h2>
         <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">Testimonails is a great way to increase the brand trust and awareness. Use this section to highlight your popular customers.</p>
@@ -66,7 +66,7 @@ const Services = () => {
             </div>
         </div>
     </div>
-</div>
+</section>
   )
 }
 
