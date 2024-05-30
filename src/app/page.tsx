@@ -10,14 +10,12 @@ export default function Home() {
     <main>
       <NavBar />
       <LandingPage />
-      <Divider children={'Services'}/>
-       <Services /> 
-       <Divider children={'Testimonials'}/>
-      <Testimonials/> 
-      <Divider children={'Contact'}/>
-      <Contact /> 
-
-     
+      <Divider>Services</Divider>
+      <Services />
+      <Divider>Testimonials</Divider>
+      <Testimonials />
+      <Divider>Contact</Divider>
+      <Contact />
     </main>
   );
 }
