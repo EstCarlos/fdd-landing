@@ -1,6 +1,5 @@
 import Contact from "@/components/Contact";
 import Divider from "@/components/Divider";
-import Footer from "@/components/Footer";
 import LandingPage from "@/components/LandingPage";
 import NavBar from "@/components/NavBar";
 import Services from "@/components/Services";
@@ -11,15 +10,12 @@ export default function Home() {
     <main>
       <NavBar />
       <LandingPage />
-      <Divider children={'Services'}/>
-       <Services /> 
-       <Divider children={'Testimonials'}/>
-      <Testimonials/> 
-      <Divider children={'Contact'}/>
-      <Contact /> 
-      <Footer/>
-
-     
+      <Divider>Services</Divider>
+      <Services />
+      <Divider>Testimonials</Divider>
+      <Testimonials />
+      <Divider>Contact</Divider>
+      <Contact />
     </main>
   );
 }
