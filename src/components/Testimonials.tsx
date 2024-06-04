@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonials = () => {
   return (
-    <div className="pb-5 h-full pt-36" id='testimonials'>
+    <div className="pb-5 h-full " id='testimonials'>
     <div className="container flex flex-col items-center justify-center p-6 mx-auto mt-4 text-center xl:px-0">
         {/* <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">Testimonials</div> */}
         <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">Here&#x27;s what our customers said</h2>
