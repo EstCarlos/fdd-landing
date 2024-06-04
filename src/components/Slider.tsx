@@ -9,9 +9,9 @@ export default function Slider() {
           <CarouselContent>
             <CarouselItem>
               <div className="relative h-[400px] md:h-[500px] lg:h-[750px] w-full overflow-hidden">
-                <Image src="/logo.svg" width={2000} height={100} alt="Product Image 1" className="h-full w-full object-cover" />
+                {/* <Image src="/logo.svg" width={2000} height={100} alt="Product Image 1" className="h-full w-full object-cover" /> */}
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent " />
-                <div className="absolute bottom-0 left-0 right-0 px-6 py-8 text-center text-white">
+                <div className="absolute bottom-0 left-0 right-0 px-6 py-96 text-center text-white">
                   <h3 className="text-2xl font-bold md:text-3xl">Introducing our latest product</h3>
                   <p className="mt-2 text-lg md:text-xl">
                     Experience the future of technology with our cutting-edge solution.
@@ -21,9 +21,9 @@ export default function Slider() {
             </CarouselItem>
             <CarouselItem>
               <div className="relative h-[400px] md:h-[500px] lg:h-[750px] overflow-hidden ">
-              <Image src="/logo.svg" width={200} height={200} alt="Product Image 1" className="h-full w-full object-cover" />
+              {/* <Image src="/logo.svg" width={200} height={200} alt="Product Image 1" className="h-full w-full object-cover" /> */}
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 px-6 py-8 text-center text-white">
+                <div className="absolute bottom-0 left-0 right-0 px-6 py-96 text-center text-white">
                   <h3 className="text-2xl font-bold md:text-3xl">Elevate your business with our solution</h3>
                   <p className="mt-2 text-lg md:text-xl">Unlock new possibilities and drive your success.</p>
                 </div>
@@ -31,9 +31,9 @@ export default function Slider() {
             </CarouselItem>
             <CarouselItem>
               <div className="relative h-[400px] md:h-[500px] lg:h-[750px] overflow-hidden ">
-              <Image src="/logo.svg" width={200} height={200} alt="Product Image 1" className="h-full w-full object-cover" />
+              {/* <Image src="/logo.svg" width={200} height={200} alt="Product Image 1" className="h-full w-full object-cover" /> */}
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 px-6 py-8 text-center text-white">
+                <div className="absolute bottom-0 left-0 right-0 px-6 py-96  text-center text-white">
                   <h3 className="text-2xl font-bold md:text-3xl">
                     Transform your business with our innovative solution
                   </h3>

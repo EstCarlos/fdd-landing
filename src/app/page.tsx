@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Slider from "@/components/Slider";
+import Vacancies from "@/components/Vacancies";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <Services />
       <Divider>Testimonials</Divider>
       <Testimonials />
+      <Divider>Vacancies</Divider>
+      <Vacancies />
       <Divider>Contact</Divider>
       <Contact />
     </main>
