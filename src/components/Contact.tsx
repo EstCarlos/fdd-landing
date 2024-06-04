@@ -12,7 +12,7 @@ const Contact = () => {
 
   return (
 
-    <section className="pt-24 h-screen" id="contact">
+    <section className=" h-full" id="contact">
        <div className="container flex flex-col items-center justify-center p-6 mx-auto mt-4 text-center xl:px-0">
         {/* <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">Testimonials</div> */}
         <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">Here&#x27;s what our customers said</h2>
@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
   
         <div className="rounded-lg bg-white p-8 shadow lg:col-span-3 lg:p-12 border-dashed border-2">
-          <form action="#" className="space-y-4">
+          <form action={actions} className="space-y-4">
             <div>
               <label className="sr-only" htmlFor="name">Name</label>
               <Input
@@ -43,6 +43,7 @@ const Contact = () => {
                 placeholder="Name"
                 type="text"
                 id="name"
+                name="name"
               />
             </div>
   
@@ -118,47 +119,26 @@ const Contact = () => {
             </div>
   
             <div className="mt-4">
-              <button
-                type="submit"
-                className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
-              >
-                Send Enquiry
-              </button>
+            <SubmitButton />
             </div>
           </form>
         </div>
       </div>
     </div>
-  </section>
-   
-
-    
-      
-
-
-/* // <div> 
-    //     <form action={actions}>
-    //     <Label htmlFor="name">Name</Label>
-    //     <Input
-    //       type="text"
-    //       id="name"
-    //       name="name"
-    //       required
-    //       placeholder="Product Name"
-    //     />
-    //     <SubmitButton />
-    //     </form>
-    // </div> */
-    
+  </section>   
   )
 }
 
 function SubmitButton() {
     const { pending } = useFormStatus();
     return (
-      <button type="submit" disabled={pending}>
-        {pending ? "Saving" : "Save"}
-      </button>
+      <button
+      type="submit"
+      disabled={pending}
+      className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+    >
+       {pending ? "Saving" : "Save"}
+    </button>
     );
   }
 
