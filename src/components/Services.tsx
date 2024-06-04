@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <section className="h-screen py-5 bg-white dark:bg-gray-900 " id="services">
+    <section className="h-full py-5 bg-white dark:bg-gray-900 " id="services">
       <div className="container flex flex-col items-center justify-center p-6 mx-auto mt-24 text-center xl:px-0">
         {/* <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">Testimonials</div> */}
         <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">

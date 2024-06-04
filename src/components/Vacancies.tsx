@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function vancies() {
   return (
-    <section className="w-full h-screen py-12 md:py-24 lg:py-32">
+    <section className="w-full h-full py-12 md:py-24 lg:py-32">
       <div className="container space-y-12 px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
