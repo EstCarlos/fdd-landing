@@ -1,9 +1,13 @@
 "use client";
 
 import { scrolltoHash } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import image from "../../public/logo.svg";
+import LanguageSelector from "./LanguageSelector";
+
 const NavBar = () => {
+  const t = useTranslations("NavBar");
   return (
     <nav className="shadow sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -44,12 +48,12 @@ const NavBar = () => {
                 className="block py-2 px-3 text-gray-900   rounded md:bg-transparent md:p-0 dark:text-white "
                 aria-current="page"
               >
-                Home
+                {t("home")}
               </button>
             </li>
             <li>
               <button className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                About
+                {t("home")}
               </button>
             </li>
             <li>
@@ -57,7 +61,7 @@ const NavBar = () => {
                 onClick={() => scrolltoHash("services")}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Services
+                {t("about")}
               </button>
             </li>
             <li>
@@ -65,7 +69,7 @@ const NavBar = () => {
                 onClick={() => scrolltoHash("testimonials")}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Testimonials
+                {t("services")}
               </button>
             </li>
             <li>
@@ -73,11 +77,12 @@ const NavBar = () => {
                 onClick={() => scrolltoHash("contact")}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Contact
+                {t("testimonials")}
               </button>
             </li>
           </ul>
         </div>
+        <LanguageSelector />
       </div>
     </nav>
   );
