@@ -10,8 +10,6 @@ const layout = ({
     <div className='p-12'>
       <BackButton />
         {children}
-       
-       
     </div>
   )
 }
