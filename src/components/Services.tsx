@@ -41,7 +41,7 @@ type ServiceProps = {
 
   function Service({title, description} : ServiceProps) {
   return (
-    <Card className="w-full max-w-sm p-6 bg-white shadow-lg rounded-lg dark:bg-gray-800">
+    <Card className="w-full  p-6 bg-white shadow-lg rounded-lg dark:bg-gray-800">
       <div className="flex items-center mb-4">
         <div className="bg-gray-100 p-3 rounded-full dark:bg-gray-700">
           <RocketIcon className="w-6 h-6 text-primary" />

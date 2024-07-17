@@ -1,0 +1,9 @@
+{
+  "NavBar": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "testimonials": "Testimonios",
+    "services": "Servicios"
+  }
+}

@@ -1,9 +1,6 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/LWpfn3LI5UJ
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+"use client"
 import Link from "next/link"
+import { useLocale } from 'next-intl';
 
 export default function vancies() {
   return (
@@ -36,7 +33,10 @@ type VacancieProps = {
     
 }
 
+
+
 const Vacancie = ({title, description} : VacancieProps) => {
+  const locale = useLocale()
   return (
     <div className="rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl">
     {/* <img
@@ -52,7 +52,7 @@ const Vacancie = ({title, description} : VacancieProps) => {
        {description}
       </p>
       <Link
-        href="application"
+        href={locale+"/application"}
         className="mt-4 inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
         prefetch={false}
       >
