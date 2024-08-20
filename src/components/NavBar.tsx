@@ -3,7 +3,7 @@
 import { scrolltoHash } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import image from "../../public/logo.svg";
+import logo from "../../public/logo-fey.jpg";
 import LanguageSelector from "./LanguageSelector";
 
 const NavBar = () => {
@@ -11,11 +11,14 @@ const NavBar = () => {
   return (
     <nav className="shadow sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <Image src={image} className="h-8" alt="Flowbite Logo" />
+        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Image src={logo} className="h-10 w-14" alt="Flowbite Logo" />
+          <span>
+            <span className="font-semibold text-gray-800 dark:text-gray-100">
+              F D D
+            </span>
+            <span className="text-gray-500 dark:text-gray-400"> S.R.L</span>
+          </span>
         </a>
         <button
           data-collapse-toggle="navbar-default"
