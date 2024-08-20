@@ -65,6 +65,7 @@ const Contact = () => {
                     placeholder="Email address"
                     type="email"
                     id="email"
+                    name="email"
                   />
                 </div>
 
@@ -77,6 +78,7 @@ const Contact = () => {
                     placeholder="Phone Number"
                     type="tel"
                     id="phone"
+                    name="phone"
                   />
                 </div>
               </div>
@@ -129,6 +131,7 @@ const Contact = () => {
                   placeholder="Message"
                   rows="8"
                   id="message"
+                  name="message"
                 ></Textarea>
               </div>
 
