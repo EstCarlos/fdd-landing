@@ -20,53 +20,52 @@ const Contact = () => {
           evento.
         </p>
       </div>
-      <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-          <div className="rounded-lg bg-white p-8 shadow lg:col-span-3 lg:p-12 border-dashed border-2">
-            <h2 className="text-3xl pb-6 font-medium">Contactanos</h2>
-            <form action={actions} className="space-y-4">
+      <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-36">
+        <div className="rounded-lg bg-white p-8 shadow lg:col-span-3 lg:p-12 border-dashed border-2">
+          <h2 className="text-3xl pb-6 font-medium">Contactanos</h2>
+          <form action={actions} className="space-y-4">
+            <div>
+              <label className="sr-only" htmlFor="name">
+                Name
+              </label>
+              <Input
+                className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Name"
+                type="text"
+                id="name"
+                name="name"
+              />
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
-                <label className="sr-only" htmlFor="name">
-                  Name
+                <label className="sr-only" htmlFor="email">
+                  Email
                 </label>
                 <Input
                   className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Name"
-                  type="text"
-                  id="name"
-                  name="name"
+                  placeholder="Email address"
+                  type="email"
+                  id="email"
+                  name="email"
                 />
               </div>
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div>
-                  <label className="sr-only" htmlFor="email">
-                    Email
-                  </label>
-                  <Input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Email address"
-                    type="email"
-                    id="email"
-                    name="email"
-                  />
-                </div>
-
-                <div>
-                  <label className="sr-only" htmlFor="phone">
-                    Phone
-                  </label>
-                  <Input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Phone Number"
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                  />
-                </div>
+              <div>
+                <label className="sr-only" htmlFor="phone">
+                  Phone
+                </label>
+                <Input
+                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Phone Number"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                />
               </div>
+            </div>
 
-              {/* <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+            {/* <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
               <div>
                 <label
                   htmlFor="Option1"
@@ -104,26 +103,26 @@ const Contact = () => {
               </div>
             </div>
    */}
-              <div>
-                <label className="sr-only" htmlFor="message">
-                  Message
-                </label>
+            <div>
+              <label className="sr-only" htmlFor="message">
+                Message
+              </label>
 
-                <Textarea
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Message"
-                  rows="8"
-                  id="message"
-                  name="message"
-                ></Textarea>
-              </div>
+              <Textarea
+                className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Message"
+                rows="8"
+                id="message"
+                name="message"
+              ></Textarea>
+            </div>
 
-              <div className="mt-4">
-                <SubmitButton />
-              </div>
-            </form>
-          </div>
-          <div className="lg:col-span-2 lg:py-2">
+            <div className="mt-4">
+              <SubmitButton />
+            </div>
+          </form>
+        </div>
+        {/* <div className="lg:col-span-2 lg:py-2">
             <p className="max-w-xl text-lg">
               Numero de telefono direccion y cosas asi
             </p>
@@ -141,8 +140,7 @@ const Contact = () => {
             <div className="py-6">
               <MapComponent />
             </div>
-          </div>
-        </div>
+          </div> */}
       </div>
     </section>
   );
