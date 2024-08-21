@@ -1,7 +1,9 @@
+import { NavBar } from "@/components/component/nav-bar";
 import Contact from "@/components/Contact";
 import Divider from "@/components/Divider";
 import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
+import LandingPage from "@/components/LandingPage";
+
 import Services from "@/components/Services";
 import Slider from "@/components/Slider";
 import Testimonials from "@/components/Testimonials";
@@ -13,7 +15,7 @@ export default function Home() {
   return (
     <main>
       <NavBar />
-      <Slider/>
+      <Slider />
       <Divider>Services</Divider>
       <Services />
       <Divider>Testimonials</Divider>
