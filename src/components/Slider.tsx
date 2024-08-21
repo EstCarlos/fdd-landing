@@ -13,7 +13,7 @@ export default function Slider() {
       <Carousel>
         <CarouselContent>
           <CarouselItem>
-            <div className="relative h-[400px] md:h-[500px] lg:h-[750px] overflow-hidden">
+            <div className="relative h-[620px] md:h-[700px] lg:h-[750px] overflow-hidden">
               <Image
                 src="/sliderImage1.jpeg"
                 width={2000}
@@ -33,7 +33,7 @@ export default function Slider() {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="relative h-[400px] md:h-[500px] lg:h-[750px] overflow-hidden">
+            <div className="relative h-[620px] md:h-[700px] lg:h-[750px] overflow-hidden">
               <Image
                 src="/sliderImage2.jpeg"
                 width={2000}
@@ -53,7 +53,7 @@ export default function Slider() {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="relative h-[400px] md:h-[500px] lg:h-[750px] overflow-hidden">
+            <div className="relative h-[620px] md:h-[700px] lg:h-[750px] overflow-hidden">
               <Image
                 src="/sliderImage3.jpeg"
                 width={2000}

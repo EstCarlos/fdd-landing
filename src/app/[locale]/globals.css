@@ -4,6 +4,9 @@
 @import "flag-icons/css/flag-icons.min.css";
 
 @layer base {
+  li{
+    list-style-type: none;
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
