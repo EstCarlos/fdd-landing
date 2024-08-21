@@ -9,8 +9,7 @@ const Footer = () => {
     </div> */}
 
     <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-      itaque neque.
+    Donde la seguridad se encuentra con la excelencia
     </p>
 
     <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
