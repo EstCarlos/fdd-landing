@@ -4,7 +4,6 @@ import { scrolltoHash } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import logo from "../../public/logo-fey.jpg";
-import LanguageSelector from "./LanguageSelector";
 
 const NavBar = () => {
   const t = useTranslations("NavBar");
@@ -53,7 +52,7 @@ const NavBar = () => {
             </li>
             <li>
               <button
-                onClick={() => scrolltoHash("services")}
+                onClick={() => scrolltoHash("vacancies")}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 {t("about")}
@@ -85,7 +84,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <LanguageSelector />
+        {/* <LanguageSelector /> */}
       </div>
     </nav>
   );

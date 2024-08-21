@@ -20,9 +20,9 @@ export default function Home() {
       <Services />
       <Divider>Testimonials</Divider>
       <Testimonials />
-      <Divider>Vacancies</Divider>
+      <Divider>Vacantes</Divider>
       <Vacancies />
-      <Divider>Contact</Divider>
+      <Divider>Contacto</Divider>
       <Contact />
       <Footer />
     </main>
