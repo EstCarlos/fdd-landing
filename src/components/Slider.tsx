@@ -2,8 +2,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
@@ -24,10 +24,10 @@ export default function Slider() {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 px-6 py-6 text-center bg-black/60 text-white rounded-md">
                 <h3 className="text-2xl font-bold md:text-3xl">
-                  Elevate your business with our solution
+                Seguridad confiable para cada evento
                 </h3>
                 <p className="mt-2 text-lg md:text-xl">
-                  Unlock new possibilities and drive your success.
+                Protege lo que más importa con nuestras soluciones avanzadas de seguridad.
                 </p>
               </div>
             </div>
@@ -44,10 +44,10 @@ export default function Slider() {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 px-6 py-6 text-center bg-black/60 text-white rounded-md">
                 <h3 className="text-2xl font-bold md:text-3xl">
-                  Elevate your business with our solution
+                Protege cada evento con nuestra experiencia en seguridad
                 </h3>
                 <p className="mt-2 text-lg md:text-xl">
-                  Unlock new possibilities and drive your success.
+                Nos aseguramos de que cada detalle esté bajo control para que puedas concentrarte en el éxito de tu evento.
                 </p>
               </div>
             </div>
@@ -64,10 +64,10 @@ export default function Slider() {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 px-6 py-6 text-center bg-black/60 text-white rounded-md">
                 <h3 className="text-2xl font-bold md:text-3xl">
-                  Elevate your business with our solution
+                Comprometidos con tu seguridad en cada paso
                 </h3>
                 <p className="mt-2 text-lg md:text-xl">
-                  Unlock new possibilities and drive your success.
+                Nuestro equipo garantiza protección y tranquilidad en todos tus eventos.
                 </p>
               </div>
             </div>

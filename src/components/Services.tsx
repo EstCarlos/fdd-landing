@@ -4,11 +4,10 @@ const Services = () => {
       <div className="container flex flex-col items-center justify-center p-6 mx-auto text-center xl:px-0">
         {/* <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">Testimonials</div> */}
         <h2 className="max-w-2xl text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
-          Here&#x27;s what our customers said
+        Protección Garantizada para Nuestros Clientes
         </h2>
         <p className="max-w-2xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-          Testimonails is a great way to increase the brand trust and awareness.
-          Use this section to highlight your popular customers.
+        Nuestro compromiso es ofrecer servicios de seguridad de alta calidad. 
         </p>
       </div>
       <div
@@ -17,21 +16,17 @@ const Services = () => {
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           
-        <Service title='Blazing Fast Deployment' description='Deploy your apps in seconds with our cutting-edge infrastructure. No more waiting for slow builds and
-        deployments.'/>
-         <Service title='Blazing Fast Deployment' description='Deploy your apps in seconds with our cutting-edge infrastructure. No more waiting for slow builds and
-        deployments.'/>
-         <Service title='Blazing Fast Deployment' description='Deploy your apps in seconds with our cutting-edge infrastructure. No more waiting for slow builds and
-        deployments.'/>
+        <Service title='Seguridad de Eventos' description='Garantizamos la seguridad en todo tipo de eventos, asegurando un ambiente controlado y seguro para todos los asistentes.'/>
+         <Service title='Seguridad Personal' description='Ofrecemos protección personalizada para individuos, adaptándonos a sus necesidades y brindando un entorno seguro y discreto.'/>
+         <Service title='Seguridad Física' description='Protegemos instalaciones y bienes con servicios de vigilancia, control de acceso y patrullaje, asegurando la máxima seguridad.'/>
        
         </div>
       </div>
     </section>
   );
 };
-import React from 'react'
-import { Card } from "@/components/ui/card"
-import Link from "next/link"
+import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 type ServiceProps = {
   title: string
@@ -52,11 +47,11 @@ type ServiceProps = {
         {description}
       </p>
       <Link
-        href="#"
+        href="#contact"
         className="inline-flex items-center justify-center px-4 py-2 bg-primary text-white font-medium rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
         prefetch={false}
       >
-        Get Started
+        Vamo alla
         <ArrowRightIcon className="ml-2 w-4 h-4" />
       </Link>
     </Card>

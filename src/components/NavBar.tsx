@@ -4,7 +4,6 @@ import { scrolltoHash } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import logo from "../../public/logo-fey.jpg";
-import LanguageSelector from "./LanguageSelector";
 
 const NavBar = () => {
   const t = useTranslations("NavBar");
@@ -85,7 +84,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <LanguageSelector />
+        {/* <LanguageSelector /> */}
       </div>
     </nav>
   );
